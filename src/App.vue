@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--声明路由连接-->
+    <!-- <router-link to="/discover">发现</router-link> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Login from './components/Login.vue'
 export default {
   name: 'App',
+  data:function(){
+    return {
+      
+    }
+  },
+  methods:{
+
+  },
+  created:function(){
+    
+  },
+  mounted:function(){
+    console.log("app被挂载")
+  },
   components: {
-    HelloWorld
+    
   }
 }
 </script>
